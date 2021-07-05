@@ -6,9 +6,9 @@ import App from './App';
 function RootApp ({ Component }) {
   return (
     <ChakraProvider>
-      <Component />
+       {/* <Component />  */}
       <App />
-    </ChakraProvider>
+     </ChakraProvider>
   )
 }
 
