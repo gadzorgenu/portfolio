@@ -1,14 +1,16 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import About from "./Components/About";
+import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
 
 function App() {
   return (
-    <Box bg='black' h='100vh'>
-    <Navbar/>
+    <Box >
+    <Header />
     <About />
+    <Resume/>
     <Footer />
     </Box>
   );
