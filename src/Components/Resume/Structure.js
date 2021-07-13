@@ -34,7 +34,7 @@ const Structure = ({ mt, startYear,endYear, data, bg, color}) => {
                             <Box w={6} h={6} bg='blue.900' rounded='xl' fontSize='5px' mt={-3}></Box>
                             <Divider  w={20}  bg={ bg || 'blue.900'}   borderWidth={1}/>
                             <Box  mt={-5} ml={4}>
-                                <Text color={ color || 'blue.900'} fontWeight='bold'>{item.course || item.title}</Text> 
+                                <Text color={ color || 'blue.900'}  fontWeight='bold'>{item.course || item.title}</Text> 
                                 {item.responsibilities ? (
                                     <List>
                                         {item.responsibilities.map( item => (
