@@ -24,10 +24,10 @@ const Education = () => {
     ]
 
     return (
-       <Box bg='white' px={32} py={20} >
-           <Heading color='blue.600' fontSize={44} > Resume</Heading>
+       <Box bg='white' px={32} pt={20} >
+           <Heading color='blue.900' fontSize={44} > Resume</Heading>
            <Text fontSize={24} pt={5}>
-               My <br /> <Heading as='span' fontSize={32} py={2}> Education</Heading>
+               My <br /> <Heading as='span' fontSize={32} py={2} color='blue.600'> Education</Heading>
            </Text>
            <Box py={10}>
                <Structure  data={data}  startYear='August, 2014' endYear='November, 2021' />

@@ -3,8 +3,8 @@ import { Box, Heading , Text} from '@chakra-ui/react'
 
 const About = () => {
     return (
-       <Box px={32} py={16} h='40rem' bg='blackAlpha.900' w='100vw'>
-           <Heading color='white' fontSize={44} py={7}> About me</Heading>
+       <Box px={32} py={16} h='40rem'  w='100vw'>
+           <Heading color='blue.900' fontSize={44} py={7}> About me</Heading>
            <Box borderRadius={10}  h='20rem' bg='blue.500' p={8} color='white'>
                 <Text fontSize={20}>Professional</Text>
                 <Heading>Summary</Heading>
