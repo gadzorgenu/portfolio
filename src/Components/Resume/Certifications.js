@@ -12,10 +12,26 @@ import web from '../../assets/web.PNG'
 
 function Certifications() {
 
-    const Pic = ({src, alt}) => {
+    const Pic = ({src, alt, institution}) => {
         return(
-        <Box borderWidth={2} borderColor='blue.900' borderRadius='6px' mr={16} _hover={{background:'red'}}  w='22rem'>
-            <Image src={src} alt={alt} h='12rem'/>
+        <Box borderWidth={2} bgImage={src} borderColor='blue.900' borderRadius='6px' bgSize='cover' mr={16} 
+            _hover={{
+                cursor:'pointer', 
+                bg:'blue.900', 
+                opacity:0.5,
+                color:'white',
+                fontSize:24,
+                textAlign:'center',
+                py:20
+            }}  
+            w='32rem' 
+             h='15rem'
+
+            >
+               <Box color='white'>
+                    <Text > {alt}</Text> 
+                    <Text> {institution}</Text> 
+               </Box>
         </Box>
         )
     }
@@ -27,19 +43,19 @@ function Certifications() {
            </Text>
            <Container maxW='90rem' mx='auto'>
             <Flex pt={10} justify='center'>
-               <Pic src={js} alt='Javascript'/>
-               <Pic src={AI} alt='Artificial Intelligence'/>
-               <Pic src={Chatbot} alt='Chatbot Design'/>
+               <Pic src={js} alt='Javascript' institution='IBM'/>
+               <Pic src={AI} alt='Artificial Intelligence' institution='IBM'/>
+               <Pic src={Chatbot} alt='Chatbot Design' institution='IBM'/>
             </Flex>
             <Flex  pt={10} justify='center'>
-               <Pic src={web} alt='Web Development'/>
-               <Pic src={Watson} alt='Watson Assistance'/>
-                <Pic src={IoT} alt='Internet of Things'/>
+               <Pic src={web} alt='Web Development' institution='IBM'/>
+               <Pic src={Watson} alt='Watson Assistance' institution='IBM'/>
+                <Pic src={IoT} alt='Internet of Things' institution='IBM'/>
             </Flex>
             <Flex  pt={10} justify='center'>
-               <Pic src={html_css} alt='HTM_CSS'/>
-               <Pic src={cyber} alt='Cybersecurity'/>
-               <Pic src={Fraud} alt='Fraud detection'/>
+               <Pic src={html_css} alt='HTM_CSS'institution='IBM' />
+               <Pic src={cyber} alt='Cybersecurity' institution='IBM'/>
+               <Pic src={Fraud} alt='Fraud detection' institution='IBM'/>
             </Flex>
            </Container>
         </Box>
