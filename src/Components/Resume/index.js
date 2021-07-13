@@ -1,4 +1,5 @@
 import React from 'react'
+import Certifications from './Certifications'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
@@ -9,6 +10,7 @@ const Resume = () => {
             <Education />
             <Experience />
             <Skills />
+            <Certifications />
         </>
     )
 }
