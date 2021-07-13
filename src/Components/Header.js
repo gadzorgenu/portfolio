@@ -4,7 +4,7 @@ import Gina from '../assets/Gina.jpg'
 import { motion } from 'framer-motion'
 import Navbar from './Navbar'
 
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram , FaTwitter} from "react-icons/fa";
 
   const  imageVariant = {
       hidden: {
@@ -93,7 +93,8 @@ const Header = () => {
                         <Flex my={3}>
                           <Link href='https://www.linkedin.com/in/georgina-adzorgenu/' mr={6}><Icon as={FaLinkedin} w={6} h={6}  /></Link>
                           <Link href='https://github.com/gadzorgenu' mr={6}><Icon  as={FaGithub} w={6} h={6}  /></Link>
-                          <Link href='https://www.instagram.com/gynasweetie/'><Icon as={FaInstagram} w={6} h={6}  /></Link>
+                          <Link href='https://www.instagram.com/gynasweetie/' mr={6}><Icon as={FaInstagram} w={6} h={6}  /></Link>
+                          <Link href='https://twitter.com/gynasweetie'><Icon as={FaTwitter} w={6} h={6}  /></Link>
                         </Flex>
                       </motion.div>
                 </Box>

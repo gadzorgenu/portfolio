@@ -7,7 +7,7 @@ import marketplace from '../../assets/marketplace.PNG'
 
 const Portfolio = () => {
     const [filteredImages, setFilteredImages] = useState([])
-    const [tag, setTag] = useState('web')
+    const [tag, setTag] = useState('photoshop')
     
     const Images = [
         {
@@ -32,7 +32,13 @@ const Portfolio = () => {
             id:4, 
             name: marketplace,
             title:'marketplace',
-            tag:'design'
+            tag:'photoshop'
+        },
+        {
+            id:4, 
+            name: marketplace,
+            title:'marketplace',
+            tag:'mobile'
         },
      
     ]
@@ -65,8 +71,9 @@ const Portfolio = () => {
             <Heading pt={5} fontSize={32} py={2} color='blue.600'> Portfolio</Heading>
 
             <Flex>
-               <Header  name='design' handleTag={setTag} active={tag === 'design' ? true : false}/>
+               <Header  name='photoshop' handleTag={setTag} active={tag === 'photoshop' ? true : false}/>
                <Header  name='web' handleTag={setTag} active={tag === 'web' ? true : false}/>
+               <Header  name='mobile' handleTag={setTag} active={tag === 'mobile' ? true : false}/>
             </Flex>
 
             {/* <Center> */}
