@@ -10,6 +10,7 @@ const About = () => {
                 <Heading>Summary</Heading>
                 <Box pt={8}>
                     <Text fontSize={20}> I am an ambitious and passionate Software Developer who has developed a mature and responsible approach to any task I am presented with.
+                    Despite my great background in information management, I have a passion for Software Engineering.
                         I am a Ghanaian based software developer who specializes in building both web and mobile applications. 
                     </Text>
                 </Box>
